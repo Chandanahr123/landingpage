@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+  <body style="background-color:hsla(145, 100%, 50%, 0.5);">
+    <div class="container mt-3">
+
+<div class="row">
+
+
+<div class="col-md-4">
+
+</div>
+
+<div class="col-md-4 jumbotron">
+<h4 class="text-center bg-light text-dark">Sign Up Here</h4>
+<br>
+<div class="alert alert-{{category}} alert-dismissible fade show" role="alert">
+    
+</div>
+<form action="/signup" method="POST">
+
+  <div class="form-group">
+    <label for="username">UserName</label>
+    <input type="text" class="form-control" id="username" name="username" required >
+  </div>
+
+  
+ <div class="form-group">
+
+  <label for="usertype">Select UserType</label>          
+                                      
+<select class="form-control" id="usertype" name="usertype"  required>
+        <option selected>Select</option>
+        <option value="Customer">Customer</option>
+        <option value="Seller">Seller</option>
+      </select>
+ </div>
+
+  <div class="form-group">
+    <label for="email">Email Address</label>
+    <input type="email" class="form-control" id="email" name="email" required>
+    <small id="emailHelp" class="form-text text-muted"></small>
+  </div>
+
+
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" class="form-control" id="password" name="password" required>
+  </div>
+  
+  <button type="submit" class="btn btn-dark btn-sm btn-block">Signup</button>
+</form>
+</div>
+
+<div class="col-md-4">
+
+</div>
+
+
+</div>
+
+</div>
+</body>
+</html>
+
+
+
